@@ -5,30 +5,26 @@
     </head>
     <body>
         <?php
-            $cars = array (
-                array("Volvo",22,18),
-                array("BMW",15,13),
-                array("Saab",5,2),
-                array("Land Rover",17,15)
-            );
-
+            $chars = array("Kaedehara Kazuha",
+            "Kuki Shinobu",
+            "Neuvillette",
+            "Kamisato Ayaka",
+            "Keqing",
+            "Barbara",
+            "Xingqiu");
             
-            echo '<p><b>Monthly Report 2023</b></p>';
+            echo '<p><b>Characters</b></p>';
             echo '<div class="w3-container" style="width: 50%">';
             echo '<table class="w3-table-all w3-hoverable">';
             echo '<tr class="w3-blue">';
             echo '<th>No.</th>';
-            echo '<th>Merk</th>';
-            echo '<th>In Stock</th>';
-            echo '<th>Sold</th>';
+            echo '<th>Name of Character</th>';
             echo '</tr>';
 
-            for ($x = 0, $y = 1; $x < 4; $x++, $y++) {
+            for ($x = 0, $y=1; $x < 7; $x++, $y++) {
                 echo '<tr>';
                 echo "<td>$y</td>";
-                echo "<td>{$cars[$x][0]}</td>";
-                echo "<td>{$cars[$x][1]}</td>";
-                echo "<td>{$cars[$x][2]}</td>";
+                echo "<td>$chars[$x]</td>";
                 echo '</tr>';    
             }
 

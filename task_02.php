@@ -15,13 +15,10 @@
             
             echo '<p><b>Characters</b></p>';
             echo '<ul class="w3-ul w3-border">';
-            echo "<li>$chars[0]</li>";
-            echo "<li>$chars[1]</li>";
-            echo "<li>$chars[2]</li>";
-            echo "<li>$chars[3]</li>";
-            echo "<li>$chars[4]</li>";
-            echo "<li>$chars[5]</li>";
-            echo "<li>$chars[6]</li>";
+            for ($x = 0; $x < 7; $x++) {
+                echo "<li>$chars[$x]</li>";
+            }
+            
             echo '</ul>';
         ?>
     </body>
