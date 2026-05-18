@@ -8,17 +8,17 @@
         <div class="w3-container w3-border w3-border-green w3-margin" style="width: 50%; margin-top: 50px;">
             <h3><b>Login</b></h3>
             <p>Please, Register or Login to our site first!</p>
-            <div class="w3-container">
+            <form class="w3-container" action="task_09_list.php" method="POST">
                 <div >
                     <label for="userId">User Id</label>
-                    <input type="text" id="userId" class="w3-input w3-border">  
+                    <input type="text" name="userId" class="w3-input w3-border" required>  
                 </div>
                 <div class="w3-padding-16">
                     <label for="passcode">Passcode</label>
-                    <input type="password" id="passcode" class="w3-input w3-border">
+                    <input type="password" name="passcode" class="w3-input w3-border" required>
                 </div>
-                <button class="w3-button w3-green w3-margin-bottom">Signin</button>
-            </div>
+                <button class="w3-button w3-green w3-margin-bottom" type="submit">Signin</button>
+            </form>
         </div>
     </body>
 </html>

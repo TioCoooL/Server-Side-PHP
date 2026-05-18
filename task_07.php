@@ -31,7 +31,7 @@
                 echo "<td>$char[0]</td>";
                 echo "<td>$char[1]</td>";
                 echo '<td>';
-                echo '<a href="profile.php?id=' . $x . '" class="glyphicon glyphicon-folder-open" style="margin-right: 15px;">';
+                echo '<a href="task_07_profile.php?id=' . $x . '" class="glyphicon glyphicon-folder-open" style="margin-right: 15px;">';
                 echo '</a>';
                 echo '<a href="#" class="glyphicon glyphicon-trash">';
                 echo '</a>';

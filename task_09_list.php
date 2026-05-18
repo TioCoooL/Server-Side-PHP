@@ -1,3 +1,10 @@
+<?php
+    if (!isset($_POST['userId']) || !isset($_POST['passcode']) || $_POST['userId'] != "admin" || $_POST['passcode'] != "1234") {
+        header("Location: task_09.php");
+        exit();
+    }
+?>
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -33,15 +40,19 @@
                 echo "<td>$char[0]</td>";
                 echo "<td>$char[1]</td>";
                 echo '<td>';
-                echo '<a href="profile.php?id=' . $x . '" class="glyphicon glyphicon-folder-open" style="margin-right: 15px;">';
+                echo '<a href="task_09_profile.php?id=' . $x . '" class="glyphicon glyphicon-folder-open" style="margin-right: 15px;">';
                 echo '</a>';
                 echo '<a href="#" class="glyphicon glyphicon-trash">';
                 echo '</a>';
                 echo '</td>';
                 echo '</tr>';    
             }
-
+            
             echo '</table>';
+            echo '<div>';
+
+            echo '<div>';
+            echo '<a href="task_09.php" class="w3-button w3-red w3-margin-top">signout</a>';
             echo '</div>';
         ?>
     </body>
